@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Mentalizer</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Información del Comprador</h1>
+    </header>
+
+    <main>
+        <form id="checkout-form">
+            <label for="name"><b>Nombre Completo:</b></label>
+            <input type="text" id="name" required>
+
+            <label for="email"><b>Correo Electrónico:</b></label>
+            <input type="email" id="email" required>
+
+            <label for="address"><b>Dirección de Facturación:</b></label>
+            <input type="text" id="address" required>
+
+            <label for="password"><b>Contraseña:</b></label>
+            <input type="password" id="password" required>
+            <hr>
+            <h3>Resumen de Compra</h3>
+            <div id="summary">
+                <!-- caja resumen compra -->
+            </div>
+
+            <button type="submit" id="buy-btn">Comprar</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Mentalizer - Todos los derechos reservados.</p>
+        <a href="https://www.mentalizer.cl" target="_blank">Visita nuestro sitio web</a>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

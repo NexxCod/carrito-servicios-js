@@ -1,0 +1,11 @@
+{
+    "plans": [
+        { "id": 1, "name": "Plan Básico", "price": 25000, "conversations": 50, "vigencia": "15 días" },
+        { "id": 2, "name": "Plan Estándar", "price": 40000, "conversations": 100, "vigencia": "1 mes" },
+        { "id": 3, "name": "Plan Premium", "price": 55000, "conversations": 150, "vigencia": "3 meses" }
+    ],
+    "addons": [
+      { "id": 1, "name": "Agente Especialidades Médicas", "price": 10000 },
+      { "id": 2, "name": "Agente Especialidades Quirúrgicas", "price": 8000 }
+    ]
+  }

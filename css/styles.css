@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* header */
+header {
+    background-color: #01328d;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* main */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #01328d;
+}
+
+/* Cuadro de detalle de los planes */
+#plans-details {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#plans-details h2 {
+    font-size: 1.8rem;
+    color: #01328d;
+    margin-bottom: 15px;
+}
+
+.plan-detail-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plan-detail-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.plan-detail-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* botones planes y addons */
+#plans-container, #addons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+button.plan-button, button.addon-button {
+    background-color: #f7f7f7;
+    color: #333;
+    border: 2px solid #01328d;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* boton seleccionado */
+button.plan-button.selected, button.addon-button.selected {
+    background-color: #014cd8;
+    color: white;
+}
+
+/* hover */
+button.plan-button:hover, button.addon-button:hover {
+    background-color: #014cd8;
+    color: white;
+}
+
+/* boton continuar */
+#continue-btn {
+    background-color: #014cd8;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+#continue-btn:hover {
+    background-color: #546dc2;
+}
+
+/* cuadro resumen */
+#summary-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#summary-section h2 {
+    font-size: 1.5rem;
+    color: #01328d;
+    margin-bottom: 15px;
+}
+
+#cart-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+#cart-summary p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#cart-summary .empty-cart {
+    color: #999;
+}
+
+/* boton eliminar */
+#cart-summary button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#cart-summary button:hover {
+    background-color: #e53935;
+}
+
+/* formulario checkout */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1.1rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #01328d;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #01328d;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3c54a3;
+}
+
+/* success */
+#purchase-details {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#purchase-details p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* volver */
+a {
+    color: #01328d;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #01328d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* movil */
+@media (max-width: 768px) {
+    #plans-container, #addons-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
